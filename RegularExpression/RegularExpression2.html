@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RegularExpression</title>
+</head>
+<body>
+    <script>
+        //URL을 링크 html 태그로 교체한다. 
+        var urlPattern = /\b(?:https?):\/\/[a-z0-9-+&@#\/%?=~_|!:,.;]*/gim;
+        var content = '구글 : http://google.com 입니다. 네이버 : http://naver.com 입니다. ';
+        var result = content.replace(urlPattern, function(url){
+            return '<a href="'+url+'">'+url+'</a>';
+        });
+        console.log(result);
+    </script>
+</body>
+</html>

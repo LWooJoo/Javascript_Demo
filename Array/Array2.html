@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        function get_members(){
+            return ['egoing', 'k8805', 'sorialgi'];
+        }
+        members = get_members();
+        // members.length는 배열에 담긴 값의 숫자를 알려준다. 
+        for(i = 0; i < members.length; i++){
+            // members[i].toUpperCase()는 members[i]에 담긴 문자를 대문자로 변환해준다.
+            document.write(members[i].toUpperCase());   
+            document.write('<br />');
+        }
+
+        var arr = [1, 2, 3, 4, 5];
+        alert(arr.length);
+    </script>
+</body>
+</html>

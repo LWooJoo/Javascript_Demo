@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+    var li = ['a', 'b', 'c', 'd', 'e'];
+    li.push('f'); //추가
+    alert(li);
+
+    var li = ['a', 'b', 'c', 'd', 'e'];
+    li = li.concat(['f', 'g']); //복수 추가
+    alert(li);
+
+    var li = ['a', 'b', 'c', 'd', 'e'];
+    li.unshift('z'); // 시작점에 추가
+    alert(li);
+
+    var li = ['a', 'b', 'c', 'd', 'e'];
+    li.splice(2, 0, 'B'); // 첫 번째 인자에 해당하는 원소부터 두번째 인자에 해당하는 원소의 숫자 만큼 값을 배열로 부터 제거 한 후 리턴
+    alert(li);
+    </script>
+</body>
+</html>
